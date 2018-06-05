@@ -37,7 +37,7 @@ Zur genauen Bestimmung, der Relation zwischen der Gitterpositionsspannung und de
 Da die Wellenlängen der Natrium-D-Linien hinreichend bekannt sind, ist es möglich aus der Spannung, die mit der Position des Gitters korreliert, die Änderung der Wellenlänge pro Spannungsänderung zu berechnen. Außerdem wurde durch die Spannung beim Peak der nullten Ordnung die Verschiebung der Wellenlängenskala zur Spannungsskala bestimmt.
 
 \begin {equation}
-\frac{dU}{d\lambda}=\frac{\Delta U}{\Delta\lamda}=\frac{6340.6 mV - 433.13 mV}{588.995 nm}=10.03 \frac{mV}{nm}
+\frac{dU}{d\lambda}=\frac{\Delta U}{\Delta\lambda}=\frac{6340.6\pm0.2 mV - 433.13\pm0.17 mV}{588.995 nm\cite{Lit}}=10.03\pm0.37 \frac{mV}{nm} 
 \end {equation}
 
 
@@ -52,7 +52,7 @@ Auf dieser Grundlage wurde das Emissionsspektrum \ref{Bunsen} einer rauschenden 
 	\end{minipage}
 	
 	
-	\caption{Emissionsspektrum der Bunsenbrennerflamme}
+	\caption{Emissionsspektrum der Bunsenbrennerflamme. Die Banden sind den entsprechenden Übergängen zugeornet.}
 	
 
 	\label{Bunsen}
@@ -64,45 +64,52 @@ Durch die Benennung einiger markanter Banden war es möglich mit einer Fitfunkti
 \begin{table}[H]
 
  
- \caption{Zusammenfassung der Ergebnisse des Fits zur Bestimmung der Konstanten }
-\begin{tabular}{L{0.1\linewidth}L{0.1\linewidth}L{0.15\linewidth}R{0.05\linewidth}L{0.2\linewidth}L{0.25\linewidth}}
+ \caption{Zusammenfassung der Ergebnisse des Fits zur Bestimmung der Konstanten. Alle Werte sind in $\si{cm}^{-1}$ angegeben.}
+\begin{tabular}{C{0.3\linewidth}|C{0.3\linewidth}C{0.3\linewidth}}
 
  
  Konstante &  Messwert &  Literatur \cite{Lit} \\
-  \addlinespace[1ex]
-\nu_e & 18813 ± 5.45 cm^-1 & \\
-\omega'_e & 1544.7 ± 9.92 cm^-1 & 1641.35 \\
-\omega'_e x'_e & 25.5 ± 3 cm^-1 &  11.67 \\
-\omega''_e & 1649.2 ± 9.92 cm^-1 & 1788.22 \\
-\omega''_e x''_e & 28.75 ± 4.18 cm^-1 & 16.440 \\
+  \hline \addlinespace[1ex] 
+$\nu_e$ & $18813 \pm 5.45$ & \\
+$\omega'_e$ & $1544.7 \pm9.92$ & $1641.35$ \\
+$\omega'_e x'_e$ & $25.5 \pm 3.0$ &  $11.67$ \\
+$\omega''_e$ & $1649.2 \pm 9.92$ & $1788.22$ \\
+$\omega''_e x''_e$ & $28.75 \pm 4.18$ & $16.440$ \\
  
    
  \end{tabular}
  \label{tab1}
  \end{table}
 
-Beim Vergeelich der angepassten Werte mit den Literaturwerten fällt auf, dass die relativen Abweichungen der Anharmonizitätskonstanten sowohl für den  Grund-, als auch für den  Angeregtenzustand bedeutend größer sind als die harmonischen Schwingungskonstanten, jedoch die Größenordnung sehr gut gefunden wurde. 
 
-Aus diesen Werten wurde nun mit hilfevon Gleichung XXX REF EINFÜGEN die Übergangswellenzahlen weiterer Übergänge berechnet, welche in Tabelle \ref{tab2} dargestellt sind.
+Beim Vergleich der angepassten Werte mit den Literaturwerten fällt auf, dass die relativen Abweichungen der Anharmonizitätskonstanten sowohl für den  Grund-, als auch für den  Angeregtenzustand bedeutend größer sind als die harmonischen Schwingungskonstanten, jedoch die Größenordnung sehr gut gefunden wurde. 
+
+Aus diesen Werten wurde nun mit hilfe von Gleichung XXX REF EINFÜGEN die Übergangswellenzahlen weiterer Übergänge berechnet, welche in Tabelle \ref{tab2} dargestellt sind.
 
 
 
 \begin{table}[H]
+ 
+\caption{Deslandres-Tabelle der beobachteten Übergänge in $\si{cm}^{-1}$. Die Werte gehen aus der Berechnung mit Gleichung XXX REF hervor}
+\begin{tabular}{L{0.1\linewidth}|L{0.1\linewidth}L{0.1\linewidth}L{0.1\linewidth}L{0.1\linewidth}L{0.1\linewidth}L{0.1\linewidth}L{0.1\linewidth}}
 
  
- \caption{Deslandres-Tabelle der beobachteten Übergänge in cm^-1. Die werte gehen aus der Berechnung mit Gleichung XXX REF hervor}
-\begin{tabular}{L{0.1\linewidth}L{0.1\linewidth}L{0.15\linewidth}R{0.05\linewidth}L{0.2\linewidth}L{0.25\linewidth}}
-
- 
- Konstante &  Messwert &  Literatur \cite{Lit} \\
-  \addlinespace[1ex]
-\nu_e & 18813 ± 5.45 cm^-1 & \\
-\omega'_e & 1544.7 ± 9.92 cm^-1 & 1641.35 \\
-\omega'_e x'_e & 25.5 ± 3 cm^-1 &  11.67 \\
-\omega''_e & 1649.2 ± 9.92 cm^-1 & 1788.22 \\
-\omega''_e x''_e & 28.75 ± 4.18 cm^-1 & 16.440 \\
+v'/v'' & 0 & 1 & 2 & 3 & 4 & 5 & 6\\
+\hline \addlinespace[1ex]
+$0$ & $18864$ & $17370$ & $15928$ &  $ $ & $ $ & $ $ &  \\
+$1$ & $20456$ & $18962$ & $17519$ & $16128$ & $ $ & $ $ &  \\
+$2$ & $21990$ & $20496$ & $19053$ & $17662$ & $16321$ & $ $ &  \\
+$3$ & $ $& $21973$ & & & $17798$ & $16508$ & \\
+$4$ & $ $ & $ $ & $ $ & $ $ & $ $ & $ $ & $16689$ \\
  
    
  \end{tabular}
  \label{tab2}
  \end{table}
+
+
+
+
+
+
+\end{document}
