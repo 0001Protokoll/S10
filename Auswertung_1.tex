@@ -1,0 +1,113 @@
+\input{usepackage.tex}
+\begin{document}
+
+\section {Auswertung}
+
+Zur genauen Bestimmung, der Relation zwischen der Gitterpositionsspannung und der Wellenzahl wurde das Licht einer Natriumdampflampe an dem verwendeten Czerny-Turner-Monochromators gebeugt und das Spektum der nullten ref{Null} und ersten ref{Eins} Ornung aufgenommen. 
+
+
+\begin{figure}[H]
+	\centering	
+	\begin{minipage}{1\textwidth}
+	\includegraphics[width=\columnwidth]{Bilder/Graph1.png}
+	\end{minipage}
+	
+	
+	\caption{Emissionsspektrum einer Natriumdampflampe bei der nullten Ordnung}
+	
+
+	\label{Null}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+\begin{figure}[H]
+	\centering	
+	\begin{minipage}{1\textwidth}
+	\includegraphics[width=\columnwidth]{Bilder/Graph2.png}
+	\end{minipage}
+	
+	
+	\caption{Emissionsspektrum einer Natriumdampflampe bei der ersten Ornung.}
+	
+	
+	\label{Eins}
+\end{figure}
+
+
+
+Da die Wellenlängen der Natrium-D-Linien hinreichend bekannt sind, ist es möglich aus der Spannung, die mit der Position des Gitters korreliert, die Änderung der Wellenlänge pro Spannungsänderung zu berechnen. Außerdem wurde durch die Spannung beim Peak der nullten Ordnung die Verschiebung der Wellenlängenskala zur Spannungsskala bestimmt.
+
+\begin {equation}
+\frac{dU}{d\lambda}=\frac{\Delta U}{\Delta\lambda}=\frac{6340.6 mV - 433.13 mV}{588.995 nm}=10.03 \frac{mV}{nm}
+\end {equation}
+
+
+Auf dieser Grundlage wurde das Emissionsspektrum ref{Bunsen} einer rauschenden Bunsenbrennerflamme aufgenommen, welche mit Butan betrieben wurde. Die augnommenen Peaks stammen aus der Relaxation des elektronisch angeregtem C2-Radikal.
+
+
+
+\begin{figure}[H]
+	\centering	
+	\begin{minipage}{1\textwidth}
+	\includegraphics[width=\columnwidth]{Bilder/Graph3.png}
+	\end{minipage}
+	
+	
+	\caption{Emissionsspektrum der Bunsenbrennerflamme}
+	
+
+	\label{Bunsen}
+\end{figure}
+
+Durch die Benennung einiger markanter Banden war es möglich mit einer Fitfunktion $\nu_e$, die harmonischen Schwingungskonstanten und die Anharmonizitätskonstanten des Grund-, und Angeregtenzustandes berechen, welche in Tabelle  ref{tab1} zusammengefasst sind.
+
+
+\begin{table}[H]
+
+ 
+ \caption{Zusammenfassung der Ergebnisse des Fits zur Bestimmung der Konstanten }
+\begin{tabular}{L{0.1\linewidth}L{0.1\linewidth}L{0.15\linewidth}}
+
+ 
+ Konstante &  Messwert &  Literatur cite{Lit} \\
+  \addlinespace[1ex]
+$\nu_e$ & $18813 ± 5.45 cm^-1$ & \\
+$\omega'_e$ & $1544.7 ± 9.92 cm^-1$ & $1641.35$ \\
+$\omega'_e x'_e$ & $25.5 ± 3.0 cm^-1$ &  $11.67$ \\
+$\omega''_e$ & $1649.2 ± 9.92 cm^-1$ & $1788.22$ \\
+$\omega''_e x''_e$ & $28.75 ± 4.18 cm^-1$ & $16.440$ \\
+ 
+   
+ \end{tabular}
+ \label{tab1}
+ \end{table}
+
+Beim Vergeelich der angepassten Werte mit den Literaturwerten fällt auf, dass die relativen Abweichungen der Anharmonizitätskonstanten sowohl für den  Grund-, als auch für den  Angeregtenzustand bedeutend größer sind als die harmonischen Schwingungskonstanten, jedoch die Größenordnung sehr gut gefunden wurde. 
+
+Aus diesen Werten wurde nun mit hilfevon Gleichung XXX REF EINFÜGEN die Übergangswellenzahlen weiterer Übergänge berechnet, welche in Tabelle \ref{tab2} dargestellt sind.
+
+
+
+\begin{table}[H]
+ 
+\caption{Deslandres-Tabelle der beobachteten Übergänge in cm^-1. Die werte gehen aus der Berechnung mit Gleichung XXX REF hervor}
+\begin{tabular}{L{0.1\linewidth}L{0.1\linewidth}L{0.15\linewidth}L{0.1\linewidth}L{0.1\linewidth}L{0.1\linewidth}L{0.1\linewidth}L{0.1\linewidth}}
+
+ 
+v'/v'' & 1 & 2 & 3 & 4 & 5 & 7  \\
+\addlinespace[1ex]
+\nu_e & 18813 ± 5.45 cm^-1 & \\
+\omega'_e & 1544.7 ± 9.92 cm^-1 & 1641.35 \\
+\omega'_e x'_e & 25.5 ± 3 cm^-1 &  11.67 \\
+\omega''_e & 1649.2 ± 9.92 cm^-1 & 1788.22 \\
+\omega''_e x''_e & 28.75 ± 4.18 cm^-1 & 16.440 \\
+ 
+   
+ \end{tabular}
+ \label{tab2}
+ \end{table}
+
+
+
+
+
+\end{document}
