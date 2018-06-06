@@ -1,9 +1,9 @@
-\input{usepackage.tex}
-\begin{document}
+%\input{usepackage.tex}
+%\begin{document}
 
 \section {Auswertung}
 
-Zur genauen Bestimmung, der Relation zwischen der Gitterpositionsspannung und der Wellenzahl wurde das Licht einer Natriumdampflampe an dem verwendeten Czerny-Turner-Monochromators gebeugt und das Spektum der nullten \ref{Null} und ersten \ref{Eins} Ornung aufgenommen. 
+Zur genauen Bestimmung, der Relation zwischen der Gitterpositionsspannung und der Wellenzahl wurde das Licht einer Natriumdampflampe an dem verwendeten Czerny-Turner-Monochromators gebeugt und das Spektum der nullten \ref{Null} und ersten \ref{Eins} Ordnung aufgenommen. 
 
 
 \begin{figure}[H]
@@ -34,7 +34,7 @@ Zur genauen Bestimmung, der Relation zwischen der Gitterpositionsspannung und de
 
 
 
-Da die Wellenlängen der Natrium-D-Linien hinreichend bekannt sind $^{[1]}$, ist es möglich aus der Spannung, die mit der Position des Gitters korreliert, die Änderung der Wellenlänge pro Spannungsänderung zu berechnen.$^{[1]}$ Außerdem wurde durch die Spannung beim Peak der nullten Ordnung die Verschiebung der Wellenlängenskala zur Spannungsskala bestimmt.
+Da die Wellenlängen der Natrium-D-Linien hinreichend bekannt sind, ist es möglich aus der Spannung, die mit der Position des Gitters korreliert, die Änderung der Wellenlänge pro Spannungsänderung zu berechnen.\cite{lit} Außerdem wurde durch die Spannung beim Peak der nullten Ordnung die Verschiebung der Wellenlängenskala zur Spannungsskala bestimmt.
 
 \begin {equation}
 \frac{dU}{d\lambda}=\frac{\Delta U}{\Delta\lambda}=\frac{6340.6~\si{mV} - 433.13~\si{mV}}{588.995~\si{nm}}=10.03~\si{\frac{mV}{nm}} 
@@ -63,7 +63,7 @@ Auf dieser Grundlage wurde das Emissionsspektrum \ref{Bunsen} einer rauschenden 
 	\label{Bunsen}
 \end{figure}
 
-Durch die Zuornung  markanter Banden war es möglich mit einer, durch den Praktikumsleiter bereitgestellten, vorimplementierten Routine die gesuchten Konstanten zu finden. Diese sind  $\nu_e$, die harmonischen Schwingungskonstanten und die Anharmonizitätskonstanten des Grund,sowie des angeregten Zustandes, welche in Tabelle  \ref{tab1} zusammengefasst sind.
+Durch die Zuornung  markanter Banden war es möglich mit einer, durch den Praktikumsleiter bereitgestellten, vorimplementierten Routine die gesuchten Konstanten zu finden.\cite{S10} Diese sind  $\nu_e$, die harmonischen Schwingungskonstanten und die Anharmonizitätskonstanten des Grund,sowie des angeregten Zustandes, welche in Tabelle  \ref{tab1} zusammengefasst sind.
 
 
 \begin{table}[H]
@@ -91,23 +91,36 @@ Beim Vergleich der angepassten Werte mit den Literaturwerten ist ersichtlich das
 
 Aus diesen Werten wurde nun mit Hilfe von Gleichung \ref{1} die Übergangswellenzahlen weiterer Übergänge berechnet, welche in Tabelle \ref{tab2} dargestellt sind.
 
+Der Fehler berechnet sich im Allgemeinen wie folgt:
+
+\begin {equation}
+\Delta \nu=\Delta \nu_e+\left(v'+\frac{1}{2}\right)\Delta \omega'_e+\left(v'+\frac{1}{2}\right)^2\Delta \omega'_e x'_e+\left(v''+\frac{1}{2}\right)\Delta \omega''_e+\left(v''+\frac{1}{2}\right)^2\Delta \omega''_e x''_e
+\end {equation}
+
+Für den 0,0-Übergang ergibt sich daraus:
+
+\begin {align}
+\notag \Delta \nu&=\left(5.45+\left(0+\frac{1}{2}\right)*9.92+\left(0+\frac{1}{2}\right)^2*3+\left(0+\frac{1}{2}\right)*9.92+ \left(0+\frac{1}{2}\right)^2*4.18\right)~\si{cm}^{-1} \\ &=17.17~\si{cm}^{-1}
+\end {align}
+
 
 
 \begin{table}[H]
  
-\caption{Deslandres-Tabelle der beobachteten Übergänge in $\si{cm}^{-1}$. Die Werte gehen aus der Berechnung mit Gleichung \ref{1} hervor}
-\begin{tabular}{L{0.1\linewidth}|L{0.1\linewidth}L{0.1\linewidth}L{0.1\linewidth}L{0.1\linewidth}L{0.1\linewidth}L{0.1\linewidth}L{0.1\linewidth}}
+\caption{Deslandres-Tabelle der beobachteten Übergänge in $\si{cm}^{-1}$. Die
+Werte gehen aus der Berechnung mit Gleichung \ref{1} hervor}
+\begin{tabular}{L{0.1\linewidth}|L{0.15\linewidth}L{0.15\linewidth}L{0.15\linewidth}L{0.15\linewidth}L{0.15\linewidth}}
 
  
-v'/v'' & 0 & 1 & 2 & 3 & 4 & 5 & 6\\
+v''/v' & 0 & 1 & 2 & 3 & 4 \\
 \hline \addlinespace[1ex]
-$0$ & $18860 \pm 20$ & $17370 \pm35$ & $15930 \pm 55 $ &  $ $ & $ $ & $ $ &  \\
-$1$ & $20460 \pm 35$ & $18960 \pm 50$ & $17520 \pm 70 $ & $16150 \pm 100$ & $ $ & $ $ &  \\
-$2$ & $21990$ & $20496$ & $19053$ & $17662$ & $16321$ & $ $ &  \\
-$3$ & $ $& $21973$ & & & $17798$ & $16508$ & \\
-$4$ & $ $ & $ $ & $ $ & $ $ & $ $ & $ $ & $16689$ \\
- 
-   
+$0$ & $18860 \pm 20$ & $20460 \pm 35$ & $21990 \pm60$ &  &  \\
+$1$ & $17370 \pm 35$ & $18960 \pm 50$ & $20500\pm 80$ & $22000\pm 100$ &  \\
+$2$ & $15930 \pm 55$ & $17520 \pm 70$ & $19100 \pm 100$ &  & \\
+$3$ &  & $16150\pm100$ & $17700\pm 150$ &  & \\
+$4$ &  &  & $16400\pm150$ & $17800\pm200$ & \\
+$5$ &  &  &  & $16500\pm 250$ & \\ 
+$6$ &  &  &  & & $16700\pm 350$\\  
  \end{tabular}
  \label{tab2}
  \end{table}
@@ -116,5 +129,4 @@ $4$ & $ $ & $ $ & $ $ & $ $ & $ $ & $ $ & $16689$ \\
 
 
 
-
-\end{document}
+%\end{document}
