@@ -39,13 +39,13 @@ Da die Wellenlängen der Natrium-D-Linien hinreichend bekannt sind, ist es mögl
 \begin {equation}
 \frac{dU}{d\lambda}=\frac{\Delta U}{\Delta\lambda}=\frac{6340.6~\si{mV} - 433.13~\si{mV}}{588.995~\si{nm}}=10.03~\si{\frac{mV}{nm}} 
 \end {equation}
-
+\\
 Der Fehler hierbei berechnet sich additiv gemäß der folgenden Gleichung:
-
+\\
 \begin {equation}
 \Delta\left(\frac{\Delta U}{\Delta \lambda}\right) = \Delta U_1 + \Delta U_2 = 0.2~\si{mV}+0.17~\si{mV}=0.37~\si{mV}
 \end{equation}
-
+\\
 Auf dieser Grundlage wurde das Emissionsspektrum \ref{Bunsen} einer rauschenden Bunsenbrennerflamme aufgenommen, welche mit Butan betrieben wurde. In dem untersuchte Energiebereich, kann die Relaxation des elektronisch angeregten $C_2$ beobachtet werden.
 
 
@@ -55,11 +55,7 @@ Auf dieser Grundlage wurde das Emissionsspektrum \ref{Bunsen} einer rauschenden 
 	\begin{minipage}{1\textwidth}
 	\includegraphics[width=\columnwidth]{Bilder/Graph3.png}
 	\end{minipage}
-	
-	
 	\caption{Emissionsspektrum der Bunsenbrennerflamme. Das Spektrum wurde durch Aufspaltung des Lichts mit einem Czerny-Turner-Monochromator aufgenommen, wobei die Detektion mit einem Photomultiplier erfolgte. Die Daten wurden mittels Igor Pro 6.37 ausgewertet. Die Peaks sind den entsprechenden Übergängen zugeordnet.}
-	
-
 	\label{Bunsen}
 \end{figure}
 
@@ -87,20 +83,24 @@ $\omega''_e x''_e$ & $28.75 \pm 4.18$ & $16.440$ \\
  \end{table}
 
 
-Beim Vergleich der angepassten Werte mit den Literaturwerten ist ersichtlich dass die ermittelten Werte nicht verträglich sind, jedoch die Größenordnung sehr gut gefunden wurde. 
+Beim Vergleich der angepassten Werte mit den Literaturwerten ist ersichtlich dass die ermittelten Werte nicht verträglich sind, jedoch die Größenordnung in guter Näherung übereinstimmt.Aus diesen Werten wurde nun mit Hilfe von Gleichung \ref{1} die Übergangswellenzahlen weiterer Übergänge berechnet, welche in Tabelle \ref{tab2} dargestellt sind.
+\newpage
+Der Fehler berechnet sich im Allgemeinen als totales Differnetial nach allen fehlerbehafteten Größen wie folgt :
 
-Aus diesen Werten wurde nun mit Hilfe von Gleichung \ref{1} die Übergangswellenzahlen weiterer Übergänge berechnet, welche in Tabelle \ref{tab2} dargestellt sind.
-
-Der Fehler berechnet sich im Allgemeinen wie folgt:
-
-\begin {equation}
+\begin{equation}
+\delta \nu = |\frac{\partial \nu}{\partial \nu_e}|\Delta \nu_e+|\frac{\partial \nu}{\partial \omega_e'} |\Delta \omega_e'+|\frac{\partial \nu}{\partial \omega_ex_e'} |\Delta \omega_ex_e'+|\frac{\partial \nu}{\partial \omega_e''} |\Delta \omega_e''+|\frac{\partial \nu}{\partial \omega_ex_e''} |\Delta \omega_ex_e''
+\end{equation}
+\\
+Für die in Tabelle \ref{tab1} bestimmten absoluten Fehler ergibt sich also :
+\begin{equation}
 \Delta \nu=\Delta \nu_e+\left(v'+\frac{1}{2}\right)\Delta \omega'_e+\left(v'+\frac{1}{2}\right)^2\Delta \omega'_e x'_e+\left(v''+\frac{1}{2}\right)\Delta \omega''_e+\left(v''+\frac{1}{2}\right)^2\Delta \omega''_e x''_e
-\end {equation}
+\end{equation}
+\\
+Als Beispielrechnung wird $\nu' = 0$ sowie $\nu''=0$ gewählt.
 
-Für den 0,0-Übergang ergibt sich daraus:
-
-\begin {align}
-\notag \Delta \nu&=\left(5.45+\left(0+\frac{1}{2}\right)*9.92+\left(0+\frac{1}{2}\right)^2*3+\left(0+\frac{1}{2}\right)*9.92+ \left(0+\frac{1}{2}\right)^2*4.18\right)~\si{cm}^{-1} \\ &=17.17~\si{cm}^{-1}
+\begin{align}
+\notag \Delta \nu&=\left(5.45+\left(0+\frac{1}{2}\right)*9.92+\left(0+\frac{1}{2}\right)^2*3+\left(0+\frac{1}{2}\right)*9.92+ \left(0+\frac{1}{2}\right)^2*4.18\right)~\si{cm}^{-1} \\\notag
+\\ &=17.17~\si{cm}^{-1}
 \end {align}
 
 
